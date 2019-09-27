@@ -1,0 +1,344 @@
+
+#fs-home-slider {
+    position: relative;
+    background: #FFF;
+    height: 78%;
+    min-width: 100%;
+    white-space: nowrap;
+    background: linear-gradient(to top right, #0ab5ff, #0893dd);
+    overflow: hidden;
+}
+#fs-home-slider .fs-home-slider-arrow {
+    z-index: 13;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font: 35pt "Material Icons";
+    /* background: #0ab5ff; */
+    color: #0ab5ff;
+    border: 3px solid #0ab5ff;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#fs-home-slider #fs-home-slider-points {
+    z-index: 2;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#fs-home-slider #fs-home-slider-points .fs-home-slider-point {
+    width: 50px;
+    height: 10px;
+    background: #FFF;
+    margin: 0 10px;
+    transform: skew(-20deg);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#fs-home-slider #fs-home-slider-points .fs-home-slider-point.active {
+    background: #0ab5ff;
+}
+
+#fs-home-slider #fs-home-slider-left {
+    left: 20px;
+    transform: skew(10deg) translateY(-50%);
+}
+
+#fs-home-slider #fs-home-slider-right {
+    right: 20px;
+    transform: skew(-10deg) translateY(-50%);
+}
+
+#fs-home-slider .fs-home-slider-arrow:hover {
+    color: #FFF;
+    background: #0ab5ff;
+}
+
+#fs-home-slider .fs-slider-element {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    /* background: center center / cover no-repeat; */
+}
+
+
+#fs-home-slider .fs-slider-element .fs-home-slider-element-title {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    font: 30pt "Oswald";
+    color: #000;
+    text-decoration: none;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+    transition: .3s ease;
+}
+
+#fs-home #fs-home-dedis {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: #0ab5ff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#fs-home #fs-home-dedis .fs-home-dedi-list {
+    display: inline-block;
+}
+
+#fs-home #fs-home-dedis .fs-home-dedi {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+#fs-home #fs-home-dedis .fs-home-dedi .fs-home-dedi-author {
+    position: relative;
+    display: inline-block;
+    color: #FFF;
+    font: 15pt "Oswald";
+}
+       
+
+#fs-home #fs-home-dedis .fs-home-dedi .fs-home-dedi-author::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+#fs-home #fs-home-dedis .fs-home-dedi .fs-home-dedi-message {
+    display: inline-block;
+    margin-left: 20px;
+    font: 11pt "Oswald";
+    color: #FFF;
+}
+
+.fs-card-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.fs-card-list .fs-card {
+    box-sizing: border-box;
+    position: relative;
+    width: 250px;
+    height: 275px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #0893dd;
+    padding: 10px 30px;
+    border: 3px solid #0ab5ff;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    transform: skew(-5deg);
+    transition: .3s ease;
+}
+.fs-card-list .fs-card:hover {
+    box-shadow: 0px 15px 15px rgba(0,0,0,0.2);
+}
+.fs-card .fs-card-texts {
+    z-index: 1;
+    text-align: center;
+    color: #FFF;
+    transform: skew(5deg);
+}
+
+.fs-card .fs-card-title {
+    font: 30pt "Oswald";
+}
+.fs-card .fs-card-subtitle {
+    font:  15pt "Roboto";
+}
+
+.fs-card .fs-card-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+    transform: skew(0deg);
+}
+
+.fs-card.fs-planning-card {
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fs-card.fs-planning-card .fs-card-title {
+    font-size: 30pt;
+}
+
+.fs-card.fs-planning-card .fs-card-subtitle {
+
+    font-size: 25pt;
+    padding: 0;
+
+}
+.fs-card.fs-planning-card .fs-card-gradient {
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+
+.fs-card.fs-news-card {
+    width: 300px;   
+    padding: 0;
+    text-decoration: none;
+}
+
+.fs-card.fs-news-card .fs-card-texts {
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skew(0);
+    width: 100%;
+    height: 50px;
+    bottom: -1px;
+    left: 0;
+    padding: 0 3px;
+    background: #0ab5ff;
+}
+
+.fs-card.fs-news-card .fs-card-texts .fs-card-title {
+    font: 15pt "Oswald";
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transform: skew(5deg);
+    text-align: left;
+    overflow: hidden;
+}
+
+.fs-card.fs-team-card {
+    transform: skew(0);
+    background: center center / cover no-repeat;
+}
+
+.fs-card.fs-team-card .fs-card-texts {
+    transform: skew(0);
+}
+
+.fs-card.fs-team-card .fs-card-texts .fs-card-title {
+    display: table;
+    padding: 3 10px;
+    background: #0ab5ff;
+    transform: skew(-5deg);
+    font: 13pt "Oswald";
+    width: auto;
+}
+
+.fs-card.fs-team-card .fs-card-texts .fs-card-subtitle {
+    font: 10pt "Roboto";
+    text-align: left;
+}
+
+.fs-card.fs-team-card#dorian {background-image: url("../img/team/dorian.jpg");}
+.fs-card.fs-team-card#arnaud {background-image: url("../img/team/arnaud.jpg");}
+.fs-card.fs-team-card#kattou {background-image: url("../img/team/kattou.jpg");}
+.fs-card.fs-team-card#ludo {background-image: url("../img/team/ludo.jpg");}
+.fs-card.fs-team-card#romhan {background-image: url("../img/team/romhan.jpg");}
+
+
+.fs-section#fs-dedi #fs-dedi-form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fs-section#fs-dedi #fs-dedi-form .fs-input-group {
+    margin: 30px 0;
+    width: 100%;
+}
+
+.fs-section#fs-dedi #fs-dedi-form .fs-input-group label {
+    display: table;
+    padding: 10px 15px;
+    background: #0ab5ff;
+    color: #FFF;
+    font: 13pt "Oswald";
+    transform: skew(-5deg);
+    margin-left: 2px;
+}
+.fs-section#fs-dedi #fs-dedi-form input,
+.fs-section#fs-dedi #fs-dedi-form textarea {
+    width: 100%;
+    border: 3px solid #0ab5ff;
+    background: #FFF;
+    color: #000;
+    padding: 10px;
+    margin: 0;
+    font-family: "Arial";
+}
+
+.fs-section#fs-dedi #fs-dedi-form textarea {
+    resize: none;
+    height: 120px;
+}
+.fs-section#fs-dedi #fs-dedi-form input[type="submit"] {
+    width: 60%;
+    font: 15pt "Roboto";
+    color: #0ab5ff;
+    background: #FFF;
+    border: 3px solid #0ab5ff;
+    cursor: pointer;
+    transition: .1s ease, 0s transform;
+}
+
+.fs-section#fs-dedi #fs-dedi-form input[type="submit"]:hover {
+    color: #FFF;
+    background: #0ab5ff;
+}
+
+.fs-section#fs-dedi #fs-dedi-form input[type="submit"]:active {
+    transform: translateY(2px);
+}
+
+
+@media screen and (max-width: 700px) {
+    #fs-home-slider {
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .fs-card.fs-planning-card {
+        width: 275px;
+    }
+}

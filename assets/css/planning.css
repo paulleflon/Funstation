@@ -1,0 +1,122 @@
+.fs-section#planning {
+    min-height: 70%;
+}
+
+#fs-planning-navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+    background: #FFF;
+    border: 2px solid #0ab5ff;
+    margin: 10px auto;
+    transform: translate(0,0);
+}
+
+#fs-planning-navbar .fs-planning-day {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 14%;
+    text-align: center;
+    font: 16pt "Oswald";
+    color: #0ab5ff;
+    cursor: pointer;
+    transform: translate(0,0);
+    transition: .1s linear;
+}
+
+#fs-planning-navbar .fs-planning-day.highlighted {
+    color: #FFF;
+    transition: .1s ease .2s;
+
+}
+
+#fs-planning-navbar #fs-planning-navbar-highlighter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 14%;
+    background: #0ab5ff;
+}
+
+.fs-planning-day-section {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.fs-planning-day-section .fs-planning-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 350px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #0ab5ff;
+    background: center center / cover;
+    transform: skew(-10deg);
+}
+
+.fs-planning-day-section .fs-planning-item .fs-planning-item-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.fs-planning-day-section .fs-planning-item .fs-planning-item-title {
+    z-index: 2;
+    font: 15pt "Oswald";
+    text-transform: uppercase;
+    color: #FFF;
+    margin: 5px;
+    padding: 3px;
+    background: #0ab5ff;
+    display: table;
+}
+
+.fs-planning-day-section .fs-planning-item .fs-planning-item-schedule {
+    z-index: 2;
+    font: 12pt "Oswald";
+    color: #FFF;
+    margin: 0 15px;
+}
+
+@media screen and (max-width: 805px) {
+    #fs-planning-navbar .fs-planning-day {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #fs-planning-navbar {
+        height: 40px;
+    }
+    #fs-planning-navbar .fs-planning-day {
+        font-size: 10pt;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    #fs-planning-navbar .fs-planning-day {
+        font-size: 8pt;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .fs-title {
+        font-size: 15pt; 
+    }
+}

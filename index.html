@@ -1,0 +1,163 @@
+<html>
+
+<head>
+    <!-- #0ab5ff -->
+    <meta charset="utf-8" />
+    <link href="assets/img/favicon.ico" rel="icon" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/home.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/dedis.js"></script>
+    <title>Funstation</title>
+</head>
+
+<body>
+    <div id="fs-fixed-menu">
+        <a href="#" id="fs-fixed-menu-logo"></a>
+        <div id="fs-fixed-menu-links">
+            <a href="#fs-home" class="fs-fixed-menu-link" id="home">Accueil</a>
+            <a href="#fs-planning" class="fs-fixed-menu-link" id="planning">Programme</a>
+            <a href="#fs-news" class="fs-fixed-menu-link" id="news">Actu</a>
+            <a href="#fs-team" class="fs-fixed-menu-link" id="team">L'équipe</a>
+            <a href="#fs-dedi" class="fs-fixed-menu-link" id="dedi">Poste ta Dédi</a>
+            <a href="/contact" class="fs-fixed-menu-link" id="contact">Nous contacter</a>
+        </div>
+        <div id="fs-fixed-menu-socials">
+            <a href="https://www.facebook.com/funstationoff/" target="_blank" class="fs-fixed-menu-social-link" id="facebook"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/FunStation_Off" target="_blank" class="fs-fixed-menu-social-link" id="twitter"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/funstationoff/?hl=fr" target="_blank" class="fs-fixed-menu-social-link" id="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCuZuXxcDq1aaQ1S81Klx9vQ/" target="_blank" class="fs-fixed-menu-social-link" id="youtube"><i
+                    class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <div id="fs-app-root">
+        <div class="fs-section" id="fs-home">
+            <div id="fs-home-slider">
+                <div id="fs-home-slider-left" class="fs-home-slider-arrow noselect">keyboard_arrow_left</div>
+                <div id="fs-home-slider-right" class="fs-home-slider-arrow noselect">keyboard_arrow_right</div>
+                <div id="fs-home-slider-points"></div>
+            </div>
+            <div id="fs-home-dedis"></div>
+        </div>
+        <div class="fs-section" id="fs-planning">
+            <div class="fs-title" id="planning">Programme du jour</div>
+            <div class="fs-card-list" id="planning">
+            </div>
+            <a href="/planning" class="fs-button fs-section-button"><span>Voir plus</span></a>
+        </div>
+        <div class="fs-section" id="fs-news">
+            <div class="fs-title">L'actu Funstation</div>
+            <div class="fs-card-list" id="news"></div>
+            <a href="/news" class="fs-button fs-section-button"><span>Voir plus</span></a>
+        </div>
+        <div class="fs-section" id="fs-team">
+            <div class="fs-title">L'équipe</div>
+            <div class="fs-card-list" id="team">
+                <div class="fs-card fs-team-card" id="dorian">
+                    <div class="fs-card-texts">
+                        <div class="fs-card-title">Dorian</div>
+                        <div class="fs-card-subtitle">Directeur Général</div>
+                    </div>
+                    <div class="fs-card-gradient"></div>
+                </div>
+                <div class="fs-card fs-team-card" id="arnaud">
+                    <div class="fs-card-texts">
+                        <div class="fs-card-title">Arnaud</div>
+                        <div class="fs-card-subtitle">Directeur</div>
+                    </div>
+                    <div class="fs-card-gradient"></div>
+                </div>
+                <div class="fs-card fs-team-card" id="kattou">
+                    <div class="fs-card-texts">
+                        <div class="fs-card-title">Kattou</div>
+                        <div class="fs-card-subtitle">Co-animatrice Dorian</div>
+                    </div>
+                    <div class="fs-card-gradient"></div>
+                </div>
+                <div class="fs-card fs-team-card" id="ludo">
+                    <div class="fs-card-texts">
+                        <div class="fs-card-title">Ludo</div>
+                        <div class="fs-card-subtitle">DJ</div>
+                    </div>
+                    <div class="fs-card-gradient"></div>
+                </div>
+                <div class="fs-card fs-team-card" id="romhan">
+                    <div class="fs-card-texts">
+                        <div class="fs-card-title">Romhan</div>
+                        <div class="fs-card-subtitle">DJ</div>
+                    </div>
+                    <div class="fs-card-gradient"></div>
+                </div>
+            </div>
+        </div>
+        <div class="fs-section" id="fs-dedi">
+            <div class="fs-title">Lache ta dédi !</div>
+            <form method="POST" action="#" id="fs-dedi-form">
+                <div class="fs-input-group">
+                    <label for="dedi-name">Ton pseudo</label>
+                    <input type="text" required name="dedi-name" id="dedi-name" />
+                </div>
+
+                <div class="fs-input-group">
+                    <label for="dedi-body">Ta Dédi</label>
+                    <textarea name="dedi-body" required id="dedi-body" placeholder="100 caractères max"></textarea>
+                </div>
+                <input type="submit" value="Envoyer !" />
+            </form>
+        </div>
+
+        <div id="fs-footer">
+            <div id="fs-footer-blocks">
+                <div class="fs-footer-block" id="newsletter">
+                    <div class="fs-footer-block-title">Newsletter</div>
+                    <p>Abonnez vous à la newsletter de Funstation pour ne rien rater !</p>
+                    <form id="fs-newsletter" action="#" method="POST">
+                        <input type="email" required id="fs-newsletter-email" name="newsletter-email"
+                            placeholder="Votre adresse email">
+                        <button type="submit"><div class="fs-icon">send</div></button>
+                    </form>
+                </div>
+                <div class="fs-footer-block" id="contact">
+                    <div class="fs-footer-block-title">Nous contacter</div>
+                    <div class="fs-footer-list">
+                        <a href="/contact" class="fs-footer-list-line">
+                            <div class="fs-icon">mail_outline</div>
+                            <b>contact@funstation.fr</b>
+                        </a>
+                        <a href="tel:0 970 191 223" class="fs-footer-list-line">
+                            <div class="fs-icon">phone</div>
+                            <b>0 970 191 223</b>
+                        </a>
+                    </div>
+                </div>
+                <div class="fs-footer-block" id="socials">
+                    <div class="fs-footer-block-title">Réseaux sociaux</div>
+                    <div class="fs-footer-list">
+                        <a href="https://www.facebook.com/funstationoff/" target="_blank" class="fs-footer-list-line">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/FunStation_Off" target="_blank" class="fs-footer-list-line">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/funstationoff/?hl=fr" target="_blank"
+                            class="fs-footer-list-line">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCuZuXxcDq1aaQ1S81Klx9vQ/" target="_blank"
+                            class="fs-footer-list-line">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:700|Roboto|Material+Icons&display=swap');
+@import url("menu.css");
+@import url("footer.css");
+
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+} 
+body {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    margin: 0;
+    background: #0ab5ff;
+}
+
+* {
+    outline: 0;
+}
+
+
+input:-moz-ui-invalid, 
+input:invalid,
+textarea:-moz-ui-invalid,
+textarea:invalid {
+    box-shadow: none !important;
+}
+
+.fs-icon {
+    font-family: "Material Icons";
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.fs-section {
+    position: relative;
+    padding: 50px 0;
+    background: #FFF;
+}
+
+
+
+.fs-blue-section {
+    background: #0ab5ff;
+}
+
+.fs-title {
+    display: table;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font: 25pt "Oswald";
+    background: #0ab5ff;
+    color: #FFF;
+    transform: skew(-10deg);
+    text-transform: uppercase;
+}
+
+.fs-blue-section .fs-title {
+    color: #0ab5ff;
+    background: #FFF;
+}
+
+.fs-button {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #FFF;
+    border: 3px solid #0ab5ff;
+    color: #0ab5ff;
+    font: 15pt "Roboto";
+    text-decoration: none;
+    transform: skewX(-10deg);
+    transition: .1s ease;
+}
+
+.fs-button:hover {
+    color: #FFF;
+    background: #0ab5ff;
+}
+
+.fs-button span {
+    display: block;
+    transform: skew(10deg);
+}
+
+.fs-section-button {
+    margin-left: 50%;
+    transform: skew(-10deg) translateX(-50%);
+}

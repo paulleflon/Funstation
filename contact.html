@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <!-- #0ab5ff -->
+    <meta charset="utf-8" />
+    <link href="assets/img/favicon.ico" rel="icon" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/contact.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.5/jquery-ui.min.js"
+        integrity="sha256-fOse6WapxTrUSJOJICXXYwHRJOPa6C1OUQXi7C9Ddy8=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <title>Funstation</title>
+</head>
+
+<body>
+    <div id="fs-app-root">
+        <div class="fs-section" id="contact">
+            <div class="fs-title">Nous contacter</div>
+            <form id="fs-contact-form" method="POST">
+                <div class="fs-input-group">
+                    <label for="author-name">Ton nom</label>
+                    <input type="text" placeholder="Nicolas Pichard" required name="author-name" id="author-name" />
+                </div>
+                <div class="fs-input-group">
+                    <label for="author-email">Ton adresse mail</label>
+                    <input type="email" placeholder="example@example.com" required name="author-email" id="dedi-email" />
+                </div>
+                <div class="fs-input-group textarea">
+                    <label for="message-body">Ton message</label>
+                    <textarea name="message-body" required id="message-body"></textarea>
+                </div>
+                <input type="submit" value="Envoyer" />
+            </form>
+        </div>
+    </div>
